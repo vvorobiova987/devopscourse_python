@@ -15,6 +15,8 @@ def multiplication(number1, number2):
 # Division function
 def division(number1, number2):
     return number1 / number2
+
+
 while True:
 
     while True:
@@ -57,7 +59,7 @@ while True:
             operation = int(operation)
             break
         else:
-            print("Oops.Invalid input. Please try again")
+            print("Error: Invalid input. Please try again and choose the operation again.")
 
     if operation == 1:
          result=addition(number1,number2)
@@ -74,11 +76,7 @@ while True:
              print("Result:", result)
          else:
              print("Error: Division by zero is not allowed!")
-     
-    else:
-        print ("Error")
-
-    
+  
 
     choice = input("Do you want to try again? (Y/N): ")
     if choice.lower() == 'y':
